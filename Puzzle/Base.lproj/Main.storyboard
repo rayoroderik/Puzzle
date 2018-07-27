@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-oa-Ct2">
+                                <rect key="frame" x="28" y="221" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746827411165" green="0.85098746827411165" blue="0.85098746827411165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHc-OK-uGm">
+                                <rect key="frame" x="143" y="221" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDd-PQ-NrS">
+                                <rect key="frame" x="258" y="221" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djo-Xc-nI2">
+                                <rect key="frame" x="29" y="341" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-km-DMv">
+                                <rect key="frame" x="144" y="341" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EHb-hw-TUh">
+                                <rect key="frame" x="259" y="341" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-g8-fgW">
+                                <rect key="frame" x="28" y="458" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mdt-Tn-HBL">
+                                <rect key="frame" x="144" y="458" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view tag="8" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inv-Gx-nRc">
+                                <rect key="frame" x="259" y="458" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85098746830000005" green="0.85098746830000005" blue="0.85098746830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="eTm-i1-PdW">
+                                <rect key="frame" x="266" y="576" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DCK-Ba-YuL" appends="YES" id="RJm-db-qOP"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="4f6-dZ-ERE">
+                                <rect key="frame" x="199" y="122" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nHM-Hx-6g7" appends="YES" id="8gV-4d-O0k"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bnt-ve-8Pt">
+                                <rect key="frame" x="29" y="576" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HjJ-oT-Tn8" appends="YES" id="Jtg-fy-SZ3"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="e4Y-PW-58u">
+                                <rect key="frame" x="143" y="582" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PO6-te-pKh" appends="YES" id="Ql1-AR-7Wr"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="VzM-jQ-FJ3">
+                                <rect key="frame" x="29" y="79" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yaj-th-lIs" appends="YES" id="IoA-sc-umo"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="60r-cU-nMV">
+                                <rect key="frame" x="191" y="59" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3p3-eW-BPc" appends="YES" id="5UF-5Y-6DB"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="iQI-7E-SGf">
+                                <rect key="frame" x="266" y="79" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="x1F-is-URw" appends="YES" id="Vly-f0-NCJ"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="MM2-km-gMW">
+                                <rect key="frame" x="84" y="653" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gcQ-Ps-9s8" appends="YES" id="f7L-4d-pN5"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="a2A-hF-snI">
+                                <rect key="frame" x="114" y="101" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oCU-04-u1l" appends="YES" id="Efr-oj-JXV"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gesture0" destination="DCK-Ba-YuL" id="fXg-3t-1ct"/>
+                        <outlet property="gesture1" destination="PO6-te-pKh" id="cT2-zd-qUE"/>
+                        <outlet property="gesture2" destination="HjJ-oT-Tn8" id="OeL-eQ-iU0"/>
+                        <outlet property="gesture3" destination="yaj-th-lIs" id="etw-eg-I05"/>
+                        <outlet property="gesture4" destination="nHM-Hx-6g7" id="0QZ-qM-C0l"/>
+                        <outlet property="gesture5" destination="3p3-eW-BPc" id="GFa-Ul-2dn"/>
+                        <outlet property="gesture6" destination="gcQ-Ps-9s8" id="pqE-QM-DuU"/>
+                        <outlet property="gesture7" destination="oCU-04-u1l" id="TJu-Th-lXH"/>
+                        <outlet property="gesture8" destination="x1F-is-URw" id="3DC-KK-6tU"/>
+                        <outletCollection property="gridCollection" destination="yWd-oa-Ct2" collectionClass="NSMutableArray" id="9BY-XA-e87"/>
+                        <outletCollection property="gridCollection" destination="XHc-OK-uGm" collectionClass="NSMutableArray" id="lZh-Pz-TxC"/>
+                        <outletCollection property="gridCollection" destination="yDd-PQ-NrS" collectionClass="NSMutableArray" id="9FJ-Jo-4U2"/>
+                        <outletCollection property="gridCollection" destination="djo-Xc-nI2" collectionClass="NSMutableArray" id="Wg8-nV-wuG"/>
+                        <outletCollection property="gridCollection" destination="ckP-km-DMv" collectionClass="NSMutableArray" id="bEn-G3-xGN"/>
+                        <outletCollection property="gridCollection" destination="EHb-hw-TUh" collectionClass="NSMutableArray" id="ZWH-xM-7r2"/>
+                        <outletCollection property="gridCollection" destination="rlD-g8-fgW" collectionClass="NSMutableArray" id="Zq7-8y-7Wc"/>
+                        <outletCollection property="gridCollection" destination="Mdt-Tn-HBL" collectionClass="NSMutableArray" id="a2D-pc-kVA"/>
+                        <outletCollection property="gridCollection" destination="Inv-Gx-nRc" collectionClass="NSMutableArray" id="DM9-32-QTD"/>
+                        <outletCollection property="PuzzleCollection" destination="eTm-i1-PdW" collectionClass="NSMutableArray" id="ly4-Vl-4Zo"/>
+                        <outletCollection property="PuzzleCollection" destination="e4Y-PW-58u" collectionClass="NSMutableArray" id="Ir0-QE-XHE"/>
+                        <outletCollection property="PuzzleCollection" destination="Bnt-ve-8Pt" collectionClass="NSMutableArray" id="sFF-th-Qz0"/>
+                        <outletCollection property="PuzzleCollection" destination="VzM-jQ-FJ3" collectionClass="NSMutableArray" id="0z9-nx-a9J"/>
+                        <outletCollection property="PuzzleCollection" destination="60r-cU-nMV" collectionClass="NSMutableArray" id="bzL-D5-LXo"/>
+                        <outletCollection property="PuzzleCollection" destination="MM2-km-gMW" collectionClass="NSMutableArray" id="qR2-Xz-Ygq"/>
+                        <outletCollection property="PuzzleCollection" destination="iQI-7E-SGf" collectionClass="NSMutableArray" id="PBz-iA-YKQ"/>
+                        <outletCollection property="PuzzleCollection" destination="a2A-hF-snI" collectionClass="NSMutableArray" id="RIs-Im-4x2"/>
+                        <outletCollection property="PuzzleCollection" destination="4f6-dZ-ERE" collectionClass="NSMutableArray" id="9KF-ah-aN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nHM-Hx-6g7">
+                    <connections>
+                        <action selector="drag4:" destination="BYZ-38-t0r" id="Prx-je-pBM"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gcQ-Ps-9s8">
+                    <connections>
+                        <action selector="drag6:" destination="BYZ-38-t0r" id="hwZ-jQ-Cn3"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HjJ-oT-Tn8">
+                    <connections>
+                        <action selector="drag2:" destination="BYZ-38-t0r" id="txo-6v-SQn"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="PO6-te-pKh">
+                    <connections>
+                        <action selector="drag1:" destination="BYZ-38-t0r" id="8FN-Yw-hao"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DCK-Ba-YuL">
+                    <connections>
+                        <action selector="drag0:" destination="BYZ-38-t0r" id="aFG-kz-gff"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yaj-th-lIs">
+                    <connections>
+                        <action selector="drag3:" destination="BYZ-38-t0r" id="J0w-HW-Xza"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3p3-eW-BPc">
+                    <connections>
+                        <action selector="drag5:" destination="BYZ-38-t0r" id="rhI-zo-pwQ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="x1F-is-URw">
+                    <connections>
+                        <action selector="drag8:" destination="BYZ-38-t0r" id="uw5-Xv-PAV"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="oCU-04-u1l">
+                    <connections>
+                        <action selector="drag7:" destination="BYZ-38-t0r" id="TDP-Yy-Hi8"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="100" height="100"/>
+        <image name="1" width="100" height="100"/>
+        <image name="2" width="100" height="100"/>
+        <image name="3" width="100" height="100"/>
+        <image name="4" width="100" height="100"/>
+        <image name="5" width="100" height="100"/>
+        <image name="6" width="100" height="100"/>
+        <image name="7" width="100" height="100"/>
+        <image name="8" width="100" height="100"/>
+    </resources>
+</document>
