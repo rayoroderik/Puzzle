@@ -95,25 +95,23 @@ class ViewController: UIViewController {
     }
     
     func snap(gambar: UIPanGestureRecognizer){
-        var nampung = 0
+        var matchedPuzzle = 0
 //        print("test")
         for index in gridCollection{
             if index.frame.intersects(gambar.view!.frame){
                 UIView.animate(withDuration: 0.1) {
                     
                     gambar.view!.center = index.center
-                    
+//                     print("gambar.tag = \(gambar.view!.tag) || \(index.tag)")
                 }
             }
+            
+            //check matched puzzle and grid count
             for index2 in PuzzleCollection{
-                print("index2.tag = \(index2.tag) || \(index.tag)")
-                print("index.center = \(index.frame.minX) || \(index2.frame.minX)")
-                
                 if index2.tag == index.tag && index.frame.minX == index2.frame.minX{
-                    print("SAMAAA")
-                    nampung += 1
-                    print(nampung)
-                    if nampung == 9 {
+                    matchedPuzzle += 1
+                    print(matchedPuzzle)
+                    if matchedPuzzle == 9 {
                         dropObject()
                     }
                 }
@@ -141,8 +139,8 @@ class ViewController: UIViewController {
     
     func randomPosisiGambar(){
         for index in PuzzleCollection{
-            var randomX = Int(arc4random_uniform(300))
-            var randomY = Int(arc4random_uniform(700))
+            let randomX = Int(arc4random_uniform(300))
+            let randomY = Int(arc4random_uniform(700))
             index.frame = CGRect(x: randomX, y: randomY, width: 100, height: 100)
         }
     }
