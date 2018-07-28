@@ -29,11 +29,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        randomPosisiGambar()
-        print("halo")
-    
     }
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,49 +40,10 @@ class ViewController: UIViewController {
        randomPosisiGambar()
     }
     
-    @IBAction func drag0(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    @IBAction func drag1(_ sender: UIPanGestureRecognizer) {
-       addGesture(gesture: sender)
-    }
-    
-    @IBAction func drag2(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-
-    @IBAction func drag3(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    @IBAction func drag4(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    
-    @IBAction func drag6(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    @IBAction func drag5(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    
-    @IBAction func drag8(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    @IBAction func drag7(_ sender: UIPanGestureRecognizer) {
-        addGesture(gesture: sender)
-    }
-    
-    
     func addGesture(gesture: UIPanGestureRecognizer){
         let location = gesture.location(in: self.view)
         gesture.view!.center = location
-//        print(location)
+
         
         if (gesture.state == .cancelled || gesture.state == .ended)
         {
@@ -96,25 +53,15 @@ class ViewController: UIViewController {
     
     func snap(gambar: UIPanGestureRecognizer){
         var matchedPuzzle = 0
-//        print("test")
         for index in gridCollection{
             if index.frame.intersects(gambar.view!.frame){
                 UIView.animate(withDuration: 0.1) {
-                    
                     gambar.view!.center = index.center
-//                     print("gambar.tag = \(gambar.view!.tag) || \(index.tag)")
                 }
             }
-            
             //check matched puzzle and grid count
             for index2 in PuzzleCollection{
-                if index2.tag == index.tag && index.frame.minX == index2.frame.minX{
-                    matchedPuzzle += 1
-                    print(matchedPuzzle)
-                    if matchedPuzzle == 9 {
-                        dropObject()
-                    }
-                }
+                checkWin(grid: index, puzzle: index2, matchedPuzzle: &matchedPuzzle)
             }
         }
     }
@@ -144,6 +91,55 @@ class ViewController: UIViewController {
             index.frame = CGRect(x: randomX, y: randomY, width: 100, height: 100)
         }
     }
+    
+    func checkWin(grid: UIView, puzzle: UIImageView, matchedPuzzle: inout Int){
+        if puzzle.tag == grid.tag && grid.frame.minX == puzzle.frame.minX{
+            matchedPuzzle += 1
+            print(matchedPuzzle)
+            if matchedPuzzle == 9 {
+                dropObject()
+            }
+        }
+    }
+    
+    @IBAction func drag0(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag1(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag2(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag3(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag4(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    
+    @IBAction func drag6(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag5(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    
+    @IBAction func drag8(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
+    @IBAction func drag7(_ sender: UIPanGestureRecognizer) {
+        addGesture(gesture: sender)
+    }
+    
     
 }
 
